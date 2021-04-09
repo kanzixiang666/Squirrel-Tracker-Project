@@ -37,12 +37,12 @@ class Squirrel(models.Model):
 
     
     adult = 'Adult'
-    baby = 'Baby'
+    juvenile = 'Juvenile'
     unknown = 'Unknown'
 
     age_choices = [
             (adult,_('Adult')),
-            (baby,_('Baby')),
+            (juvenile,_('Juvenile')),
             (unknown,_('Unknown')),
             ]
 
@@ -53,15 +53,13 @@ class Squirrel(models.Model):
             )
 
     grey = 'Grey'
-    blond = 'Blond'
+    clinamon = 'Clinamon'
     black = 'Black'
-    white = 'White'
 
     color_choices = [
            (grey,_('Grey')),
-           (blond,_('Blond')),
            (black,_('Black')),
-           (white,_('White')),
+           (clinamon,_('Clinamon')),
            ]
 
     primary_fur_color = models.CharField(
@@ -70,12 +68,12 @@ class Squirrel(models.Model):
             choices = color_choices,
             )
 
-    above_tree = 'above tree'
-    above_ground = 'above ground'
+    ground_plane = 'Ground Plane'
+    above_ground = 'Above Ground'
     
     location_choices = [
-            (above_tree,_('above tree')),
-            (above_ground,_('above ground')),
+            (ground_plane,_('Ground Plane')),
+            (above_ground,_('Above Ground')),
             (unknown,_('unknown')),
             ]
 
