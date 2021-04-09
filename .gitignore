@@ -1,4 +1,5 @@
 .env
 venv
 env.sh
-__pycache__
+__pycache_
+env/_
