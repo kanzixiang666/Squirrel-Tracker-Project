@@ -1,9 +1,10 @@
 from django.core.management.base import BaseCommand
-import csv
 from sightings.models import Squirrel
 import datetime
+import csv 
 
 class Command(BaseCommand):
+
     help = 'Import the squirrel data for project'
     
     def add_arguments(self,parser):
@@ -11,10 +12,12 @@ class Command(BaseCommand):
 
     def handle(self,*args,**kwargs):
         path = kwargs['path']
-   
-    try:
-        with open(path,encoding='utf-8') as f:
-            reader = csv.reader(f)
-            for row in reader:
-                print(row['X'])
-            
+
+        try:
+            with open(path,encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                data = list(reader)
+                print(data[100])
+
+        except:
+            print('something wrong')
