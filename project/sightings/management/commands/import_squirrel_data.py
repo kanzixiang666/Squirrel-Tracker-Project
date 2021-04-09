@@ -17,13 +17,12 @@ class Command(BaseCommand):
             with open(path,encoding='utf-8') as f:
                 reader = csv.DictReader(f)
                 data = list(reader)
-                print(data[100])
 
             def convert(string):
-                if string in ('false','FALSE','False'):
+                if string in ['false','FALSE','False']:
                     return False
-                elif string in ('true','TRUE','True'):
-                    return True:
+                elif string in ['true','TRUE','True']:
+                    return True
                 else:
                     return None
 
@@ -31,9 +30,29 @@ class Command(BaseCommand):
                 s = Squirrel(
                         latitude = row['X'],
                         longitude = row['Y'],
-                        squirrel_id = row['Unique Squirrel ID'],
-                        shift = row['shift'],
+                        unique_squirrel_id = row['Unique Squirrel ID'],
+                        shift = row['Shift'],
                         date = datetime.datetime.strptime(row['Date'],'%m%d%Y'),
+                        age = row['Age'],
+                        primary_fur_color = row['Primary Fur Color'],
+                        location = row['Location'],
+                        specific_location = row['Specific Location'],
+                        running = convert(row['Running']),
+                        chasing = convert(row['Chasing']),
+                        climbing = convert(row['Climbing']),
+                        eating = convert(row['Eating']),
+                        foraging = convert(row['Foraging']),
+                        other_activities = row['Other Activities'],
+                        kuks = convert(row['Kuks']),
+                        quaas = convert(row['Quaas']),
+                        moans = convert(row['Moans']),
+                        tail_flags = convert(row['Tail flags']),
+                        tail_twitches = convert(row['Tail twitches']),
+                        approaches = convert(row['Approaches']),
+                        indifferent = convert(row['Indifferent']),
+                        runs_from = convert(row['Runs from']),
                         )
+                s.save()
+            print('successfully saved csv')
         except:
             print('something wrong')
