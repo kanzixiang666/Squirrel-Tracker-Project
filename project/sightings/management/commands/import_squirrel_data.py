@@ -1,5 +1,6 @@
 from django.core.management.base import BaseCommand
 import csv
+from sightings.models import Squirrel
 import datetime
 
 class Command(BaseCommand):
@@ -10,4 +11,10 @@ class Command(BaseCommand):
 
     def handle(self,*args,**kwargs):
         path = kwargs['path']
-        print(path)
+   
+    try:
+        with open(path,encoding='utf-8') as f:
+            reader = csv.reader(f)
+            for row in reader:
+                print(row['X'])
+            
