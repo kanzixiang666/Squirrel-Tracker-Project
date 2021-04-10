@@ -160,4 +160,4 @@ class Squirrel(models.Model):
             )
 
     def __str__(self):
-        return "squirrel: "+str(self.squirrel_id)
+        return "squirrel: "+str(self.unique_squirrel_id)
