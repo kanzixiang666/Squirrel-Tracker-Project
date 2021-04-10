@@ -52,12 +52,12 @@ class Squirrel(models.Model):
             choices=age_choices,
             )
 
-    grey = 'Grey'
+    gray = 'Gray'
     clinamon = 'Clinamon'
     black = 'Black'
 
     color_choices = [
-           (grey,_('Grey')),
+           (gray,_('Gray')),
            (black,_('Black')),
            (clinamon,_('Clinamon')),
            ]

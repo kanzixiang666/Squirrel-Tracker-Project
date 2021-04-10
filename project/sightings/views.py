@@ -39,7 +39,7 @@ def stats(request):
     above_ground_n = squirrels.filter(location='Above Ground').count()
     ground_plane_n = squirrels.filter(location='Ground Plane').count()
     #fur color
-    grey_n = squirrels.filter(primary_fur_color='Grey').count()
+    gray_n = squirrels.filter(primary_fur_color='Gray').count()
     clinamon_n = squirrels.filter(primary_fur_color='Clinamon').count()
     black_n = squirrels.filter(primary_fur_color = 'Black').count()
 
@@ -51,7 +51,7 @@ def stats(request):
             'PM_n':PM_n,
             'above_ground_n':above_ground_n,
             'ground_plane_n':ground_plane_n,
-            'grey_n':grey_n,
+            'gray_n':gray_n,
             'clinamon_n':clinamon_n,
             'black_n':black_n,
             }
