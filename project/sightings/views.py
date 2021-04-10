@@ -36,12 +36,12 @@ def stats(request):
     AM_n = squirrels.filter(shift='AM').count()
     PM_n = squirrels.filter(shift='PM').count()
     #Location 
-    above_ground_n = squirrels.filter(location='Above Ground')
-    ground_plane_n = squirrels.filter(location='Ground Plane')
+    above_ground_n = squirrels.filter(location='Above Ground').count()
+    ground_plane_n = squirrels.filter(location='Ground Plane').count()
     #fur color
-    grey_n = squirrels.filter(primary_fur_color='Grey')
-    clinamon_n = squirrels.filter(primary_fur_color='Clinamon')
-    black_n = squirrels.filter(primary_fur_color = 'Black')
+    grey_n = squirrels.filter(primary_fur_color='Grey').count()
+    clinamon_n = squirrels.filter(primary_fur_color='Clinamon').count()
+    black_n = squirrels.filter(primary_fur_color = 'Black').count()
 
     context = {
             'total':total,
