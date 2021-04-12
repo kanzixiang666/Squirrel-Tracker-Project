@@ -1,163 +1,179 @@
 from django.db import models
 from django.utils.translation import gettext as _
-# Create your models here.
+
 
 class Squirrel(models.Model):
 
-    latitude = models.FloatField(
-            help_text = _('latitude'),
-            )
+    Latitude = models.FloatField(
+        max_length=100,
+        help_text=_('Latitude of the location'),
+    )
 
-    longitude = models.FloatField(
-            help_text = _('longitude'),
-            )
 
-    unique_squirrel_id = models.CharField(
-            max_length=25,
-            help_text = _('unique id of the squirrel'),
-            )
+    Longitude = models.FloatField(
+        max_length=100,
+        help_text=_('Longitude of the location'),
+    )
 
+
+    Squirrel_ID = models.CharField(
+        max_length=20,
+        help_text=_('Unique Squirrel ID'),
+        primary_key=True,
+        default = None,
+    )
+    
     AM = 'AM'
     PM = 'PM'
-
-    shift_choices=[
-            (AM,_('AM')),
-            (PM,_('PM')),
-             ]
     
-    shift = models.CharField(
-            max_length=5,
-            help_text=_('shift'),
-            choices=shift_choices,
-            )
+    CHOICES = [
+        (AM,_('AM')),
+        (PM,_('PM')),
+    ]
+
+    Shift = models.CharField(
+        max_length=15,
+        help_text=_('Is the sighting in the morning or in the afternoon?'),
+        choices=CHOICES,
+        blank=True,
+    )
     
-    date = models.DateField(
-            help_text=_('date'),
-            )
-
+    Date = models.DateField(
+        help_text=_('Click the button to select the date'),
+        blank=True,
+    )
     
-    adult = 'Adult'
-    juvenile = 'Juvenile'
-    unknown = 'Unknown'
+    Adult = 'Adult'
+    Juvenile = 'Juvenile'
 
-    age_choices = [
-            (adult,_('Adult')),
-            (juvenile,_('Juvenile')),
-            (unknown,_('Unknown')),
-            ]
+    AGE_CHOICES = [
+        (Adult,_('Adult')),
+        (Juvenile,_('Juvenile')),
+    ]
 
-    age = models.CharField(
-            max_length=15,
-            help_text=_('age of the squirrel'),
-            choices=age_choices,
-            )
-
-    gray = 'Gray'
-    clinamon = 'Clinamon'
-    black = 'Black'
-
-    color_choices = [
-           (gray,_('Gray')),
-           (black,_('Black')),
-           (clinamon,_('Clinamon')),
-           ]
-
-    primary_fur_color = models.CharField(
-            max_length=15,
-            help_text=_('primary fur color'),
-            choices = color_choices,
-            )
-
-    ground_plane = 'Ground Plane'
-    above_ground = 'Above Ground'
+    Age = models.CharField(
+        max_length=15,
+        help_text=_('Age'),
+        choices=AGE_CHOICES,
+        blank=True,
+        null=True,
+    )
     
-    location_choices = [
-            (ground_plane,_('Ground Plane')),
-            (above_ground,_('Above Ground')),
-            (unknown,_('unknown')),
-            ]
+    Gray = 'Gray'
+    Cinnamon = 'Cinnamom'
+    Black = 'Black'
+    
+    COLOR_CHOICES = [
+        (Gray,_('Gray')),
+        (Cinnamon,_('Cinnamom')),
+        (Black,_('Black')),
+    ]
 
-    location = models.CharField(
-            max_length=25,
-            help_text=_('location'),
-            choices=location_choices,
-            default=unknown,
-            )
+    Primary_Fur_Color = models.CharField(
+        max_length=100,
+        help_text=_('Primary Fur Color'),
+        choices=COLOR_CHOICES,
+        blank=True,
+        null=True,
+    )
+    
+    Above_Ground = 'Above Ground'
+    Ground_Plane = 'Ground Plane'
 
-    specific_location = models.CharField(
-            max_length=50,
-            help_text=_('specific location'),
-            blank=True,)
+    LOCATION_CHOICES = [
+        (Above_Ground,_('Above Ground')),
+        (Ground_Plane,_('Ground Plane')),
+    ]
 
-    running = models.BooleanField(
-            help_text=_('running'),
-            default=False,
-            )
+    Location = models.CharField(
+        max_length=20,
+        help_text=_('Location'),
+        choices=LOCATION_CHOICES,
+        blank=True,
+        null=True,
+    )
+    
+    Specific_Location = models.CharField(
+        max_length=20,
+        help_text=_('Specific Location'),
+        blank=True,
+        null=True,
+    )
+    
+    Running = models.BooleanField(
+        help_text=_('Whether or not squirrel is running'),
+        null=True,
+    )
+    
+    Chasing = models.BooleanField(
+        help_text=_('Whether or not squirrel is chasing'),
+        null=True,
+    )
+    
+    Climbing = models.BooleanField(
+        help_text=_('Whether or not squirrel is climbing'),
+        null=True,
+    )
+    
+    Eating = models.BooleanField(
+        help_text=_('Whether or not squirrel is eating'),
+        null=True,
+    )
+    
+    Foraging = models.BooleanField(
+        help_text=_('Whether or not squirrel is foraging'),
+        null=True,
+    )
+    
 
-    chasing = models.BooleanField(
-            help_text=_('chasing'),
-            default=False,
-            )
+    Other_Activities = models.CharField(
+        max_length=100,
+        help_text=_('Please sepecify other activities you saw'),
+        blank=True,
+        null=True,
+    )
+    
+    Kuks = models.BooleanField(
+        help_text=_('Kuks'),
+        null=True,
+    )
+    
+    Quaas = models.BooleanField(
+        help_text=_('Quaas'),
+        null=True,
+    )
+    
+    Moans = models.BooleanField(
+        help_text=_('Moans'),
+        null=True,
+    )
+    
+    Tail_Flags = models.BooleanField(
+        help_text=_("Whether or not squirrel's tail flag"),
+        null=True,
+    )
+    
+    Tail_Twitches = models.BooleanField(
+        help_text=_("Whether or not squirrel's tail twitch"),
+        null=True,
+    )
 
-    climbing = models.BooleanField(
-            help_text=_('climbing'),
-            default=False,
-            )
+    Approaches = models.BooleanField(
+        help_text=_('Whether or not squirrel approaches'),
+        null=True,
+    )
+    
+    Indifferent = models.BooleanField(
+        help_text=_('Whether or not squirrel is indifferent'),
+        null=True,
+    )
 
-    eating = models.BooleanField(
-            help_text=_('eating'),
-            default=False,
-            )
-
-    foraging = models.BooleanField(
-            help_text=_('foraging'),
-            default=False,
-            )
-
-    other_activities = models.CharField(
-            max_length=50,
-            help_text=_('other activities'),
-            blank=True,
-            )
-    kuks = models.BooleanField(
-           help_text = _('Kuks'),
-           default=False,
-            )
-
-    quaas = models.BooleanField(
-           help_text = _('Quaas'),
-           default=False,
-            )
-
-    moans = models.BooleanField(
-           help_text = _('Moans'),
-           default=False,
-            )
-
-    tail_flags = models.BooleanField(
-            help_text = _('Tail Flags'),
-            default=False,
-            )
-
-    tail_twitches = models.BooleanField(
-            help_text = _('Tail Twitches'),
-            default=False,
-            )
-
-    approaches = models.BooleanField(
-            help_text = _('Approaches'),
-            default=False,
-            )
-
-    indifferent = models.BooleanField(
-            help_text = _('Indifferent'),
-            default=False,
-            )
-
-    runs_from = models.BooleanField(
-            help_text = _('Runs From'),
-            default=False,
-            )
+    Runs_From = models.BooleanField(
+        help_text=_('Where the squirrel is running from'),
+        null=True,
+    )
 
     def __str__(self):
-        return "squirrel: "+str(self.unique_squirrel_id)
+        return self.Squirrel_ID
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data of squirrels</title>
+</head>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+<body>
+<h2>Stats of squirrels</h2>
+<input type="button" value="Back" onclick="document.location.href = '{% url 'sightings:index' %}'">
+	
+<h3>The detailed information:</h3>
+<table>
+    <thead>
+    <tr>
+        <th>Unique Squirrel ID</th>
+        <th>Date</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for squirrel in squirrels %}
+        <tr>
+            <td><a href="{% url 'sightings:detail' squirrel.Squirrel_ID %}"><{{ squirrel.Squirrel_ID }}></a></td>
+            <td style="text-align:center">{{ squirrel.Date }}</td>
+            </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

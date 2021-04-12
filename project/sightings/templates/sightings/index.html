@@ -1,10 +1,124 @@
 <!doctype html>
-<html>
-	<body> 
-	<ul>
-	{% for squirrel in squirrels %}
-	<li><a href ="{% url 'sightings:detail'}">{{squirrel.unique_squirrel_id}}</a></li>
-	{% endfor %}
-	</ul>
-	</body>
+<html lang="en">
+    <head>
+        <title>Squirrel Tracker</title>
+
+    </head>
+    <body style="text-align:center" bgcolor="CCCCFF">
+<style>
+      .button {
+    display: inline-block;
+    zoom: 1; 
+    *display: inline;
+    vertical-align: baseline;
+    margin: 0 2px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: .5em 2em .55em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: .5em; 
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+    text-decoration: none;
+}
+.button:active {
+    position: relative;
+    top: 1px;
+}
+
+.bigrounded {
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+    font-size: 20px;
+    width:200px;
+    height:22px;
+}
+.medium {
+    font-size: 12px;
+    padding: .4em 1.5em .42em;
+}
+.small {
+    font-size: 11px;
+    padding: .2em 1em .275em;
+}
+
+.orange {
+    color: #fef4e9;
+    border: solid 1px #da7c0c;
+    background: #f78d1d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+    background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}
+.orange:hover {
+    background: #f47c20;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+    background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+.orange:active {
+    color: #fcd3a5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+    background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+}
+
+body{
+    padding-top: 70px;
+        padding-left: 10px; padding-right: 10px;
+      }
+
+</style>
+    <h1> Welcome to Our Squirrel Tracking Website!! </h1>
+    <h4><i><a href='https://github.com/kanzixiang666/Squirrel-Tracker-Project'> Provided by Kan Zixiang & Yang Xiaohan </a></i></h4>
+	<img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2226521558,3241940893&fm=26&gp=0.jpg" alt="Squirrel Pictures" height=300>
+    <h3> </h3>
+	
+    <br>	  
+    	<a class="button orange bigrounded" href="add/"><strong> Add New Squirrel </strong></a>
+					
+    	<a class="button orange bigrounded" href="stats/"><strong> Stats of Squirrels </strong></a>
+	</br>
+
+    <h3></h3>
+    <br>                
+        <a class="button orange bigrounded" href="data/"><strong> Details of Squirrels </strong></a>	
+              
+        <a class="button orange bigrounded" href="map/"><strong> Map of Squirrel </strong></a>
+    </br>   
+    <!--
+	<h3>Current Squirrels in Database:</h3>
+	<table>
+    <thead>
+    <tr>
+        <th>Unique Squirrel ID</th>
+        <th>Date</th>
+        <th>Link to update this squirrel</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    {% for squirrel in squirrels %}
+        <tr>
+            <td style="text-align:center">{{ squirrel.Squirrel_ID }}</td>
+            <td style="text-align:center">{{ squirrel.Date }}</td>
+            <td style="text-align:center">
+            <a href="{% url 'sightings:detail' squirrel.Squirrel_ID %}">Update<{{ squirrel.Squirrel_ID }}></a>
+            </td>
+            </tr>
+    {% endfor %}
+    </tbody>
+-->
+</table>
+
+    </body>
 </html>

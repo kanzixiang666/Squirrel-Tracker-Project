@@ -1,10 +1,16 @@
-from django.urls import path 
+from django.urls import path
 
 from . import views
 
-urlpatterns = [
-        path('sightings/',views.index),
-        path('sightings/detail/',views.detail, name='detail'),
-        path('sightings/stats/',views.stats, name='stats'),
-        ]
+app_name = 'sightings'
 
+urlpatterns = [
+    path('', views.index, name='index'),
+    path('add/', views.add, name='add'),
+    path('stats/', views.stats, name='stats'),
+	path('data/', views.data_show, name='data'),
+    path('map/', views.show_map, name='map'),
+    path('<squirrel_id>/', views.detail, name='detail'),
+    
+    
+]
