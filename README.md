@@ -3,17 +3,18 @@ This is IEOR4501 Final Project, our goal is to show the squirrels in NYC central
 
 The project is based on Django and we implement several features:
 
-1. Management commands 
+
+### 1.Management commands 
 
 Allow users to import squirrel data from csv file and to export updated data to local path.
 
 The file path should be specified at the command line after the name of the management command. 
-    
-    - import commands: $ python manage.py import_squirrel_data /path/to/file.csv
-    
+#### import command:
+    - $ python manage.py import_squirrel_data /path/to/file.csv
+#### export command:
     - export commands: $ python manage.py export_squirrel_data /path/to/file.csv
   
-2. Views
+### 2. Views
 A map displayed the last viewed location of squirrels on an OpenStreet Map 
     
     - located at: /sightings/maps 
