@@ -2,10 +2,10 @@
 
 ### This is IEOR4501 Final Project, our goal is to show the squirrels in NYC central park in map and let people to update the data.
 
-![test image size](https://images.immediate.co.uk/production/volatile/sites/23/2015/11/GettyImages-948163948-6f26c98.jpg?quality=90&crop=95px%2C231px%2C2132px%2C1420px&resize=620%2C413)
-
 ![](https://www.pestremovalguide.com/wp-content/uploads/2015/08/squirrel_garden.jpg)
-
+photo reference: 
+How To Protect Your Garden From Squirrels
+https://www.pestremovalguide.com/how-to-protect-your-garden-from-squirrels/ Access April 13 2021 
 
 ## The project is based on Django and we implement several features:
 
