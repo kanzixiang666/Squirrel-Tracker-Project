@@ -1,6 +1,6 @@
 # Squirrel-Tracker-Project
 
-![](https://images.immediate.co.uk/production/volatile/sites/23/2015/11/GettyImages-948163948-6f26c98.jpg){:height="90%",width="60%"}
+<img src="https://images.immediate.co.uk/production/volatile/sites/23/2015/11/GettyImages-948163948-6f26c98.jpg" width="400" height="500)
 
 ## This is IEOR4501 Final Project, our goal is to show the squirrels in NYC central park in map and let people to update the data.
 
