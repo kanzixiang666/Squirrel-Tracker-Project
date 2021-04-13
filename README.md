@@ -45,6 +45,6 @@ Urls in squirrel id format that allows users to update information of a specific
     - located at: /sightings/<specific squirrel id> 
     
 ## Authors 
-<li> Zixiang Kan(kanzixiang666)
-<li> Xiaohan Yang(yxh0082)
+** <li> Zixiang Kan(kanzixiang666) **
+** <li> Xiaohan Yang(yxh0082) **
 
