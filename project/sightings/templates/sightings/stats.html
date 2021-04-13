@@ -6,9 +6,7 @@
     <body style="text-align:center" bgcolor="CCCCFF"></body>
 </head>
 <style>
-table, th, td {
-    border: 1px solid black;
-}
+
 .button {
     display: inline-block;
     zoom: 1; 
@@ -20,7 +18,7 @@ table, th, td {
     text-align: center;
     text-decoration: none;
     font: 14px/100% Arial, Helvetica, sans-serif;
-    padding: .5em 2em .55em;
+    padding: 2em 2em 2em 2em;
     text-shadow: 0 1px 1px rgba(0,0,0,.3);
     -webkit-border-radius: .5em; 
     -moz-border-radius: .5em;
@@ -60,16 +58,48 @@ table, th, td {
 
 .medium {
     font-size: 17px;
-    padding: 0.5em 0.5em 0.5em 0.5em;
+    padding: 0.75em 0.5em 0.5em 0.5em;
     width: 100px;
     height: 22px;
 }
 
 .mytable {
-	width: 900px;
-	height:300px;
+	width: 1200px;
+	height:260px;
 	margin: 0 auto;
 }
+
+table
+        {
+            border-collapse: collapse;
+            text-align: center;
+            table-layout: fixed;
+            width: 700px;
+        }
+        table td, table th
+        {
+            border: 5px solid #cad9ea;
+            color: #111;
+            height: 10px;
+            padding-top: 20px;
+            padding-bottom: 65px;
+        }
+        table thead th
+        {
+            background-color: #CC99FF;
+            width: 100px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        table tr:nth-child(odd)
+        {
+            background: #99CCFF;
+        }
+        
+        table tr:nth-child(even)
+        {
+            background: #99CCFF;
+        }
 
 body{
     padding-top: 70px;
@@ -79,10 +109,11 @@ body{
 <body>
 
 <h1>General Stats of Squirrels:</h1>
+<h1> </h1>
 <table class='mytable'>
-    <thead>
+    <thead class='thead-dark'>
     <tr>
-        <th>Total number of squirrels</th>
+        <th>Number</th>
         <th>Age</th>
         <th>Date</th>
         <th>Shift</th>
@@ -91,26 +122,30 @@ body{
     </thead>
     <tbody>
         <tr>
-            <td style="text-align:center">{{data_count}}</td>
             <td style="text-align:center">
-            <br>Adults:{{Age_Adult_count}}<br/>
-            <br>Juvenile:{{Age_Juvenile_count}}<br/>
+                {{data_count}}
             </td>
             <td style="text-align:center">
-            <br>Max:{{Date_max}}<br/>
-            <br>Min:{{Date_min}}<br/>            
+            <br>Adults: {{Age_Adult_count}}<br/>
+            <br>Juvenile: {{Age_Juvenile_count}}<br/>
             </td>
             <td style="text-align:center">
-            <br>AM:{{Shift_AM_count}}<br/>
-            <br>PM:{{Shift_PM_count}}<br/>
+            <br>Nearest: {{Date_max}}<br/>
+            <br>Farest: {{Date_min}}<br/>            
             </td>
             <td style="text-align:center">
-            <br>Ground Plane:{{Location_GP_count}}<br/>
-            <br>Above Ground:{{Location_AG_count}}<br/>
+            <br>Morning: {{Shift_AM_count}}<br/>
+            <br>Afternoon: {{Shift_PM_count}}<br/>
+            </td>
+            <td style="text-align:center">
+            <br>Ground Plane: {{Location_GP_count}}<br/>
+            <br>Above Ground: {{Location_AG_count}}<br/>
             </td>
             </tr>
     </tbody>
 </table>
+<br>
+</br>
 <a class="button orange medium" href="{% url 'sightings:index' %}"><strong> Back </strong></a>
 </body>
 </html>

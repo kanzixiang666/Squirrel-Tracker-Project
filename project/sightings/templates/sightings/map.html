@@ -51,9 +51,16 @@
         <!-- L.Icon.Default.prototype.options.iconAnchor = [0, 0]; -->
         <!-- L.Icon.Default.prototype.options.shadowSize = 15; -->
         <!-- L.Icon.Default.prototype.options.shadowAnchor = [0, 0]; -->
+        <!-- change icon type -->
+    var New_Icon = new L.Icon({
+          iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/emojidex/112/chipmunk_1f43f.png',
+    iconSize: [25, 25],
+          iconAnchor: [10, 10],
+    popupAnchor: [-20, -20],
+  });
         {% for squirrel in squirrels %}
           var point_at = [{{ squirrel.Latitude }}, {{ squirrel.Longitude }}];
-          var marker = L.marker(point_at).addTo(map);
+          var marker = L.marker(point_at, {icon:New_Icon}).addTo(map).bindPopup("Loction:<br>{{sight.Latitude}}, {{sight.Longitude}}");
         {% endfor %}
 
     </script>
