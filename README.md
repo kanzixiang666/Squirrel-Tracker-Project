@@ -3,6 +3,7 @@
 ### This is IEOR4501 Final Project, our goal is to show the squirrels in NYC central park in map and let people to update the data.
 
 ![](https://www.pestremovalguide.com/wp-content/uploads/2015/08/squirrel_garden.jpg)
+
 photo reference: 
 How To Protect Your Garden From Squirrels
 https://www.pestremovalguide.com/how-to-protect-your-garden-from-squirrels/ Access April 13 2021 
