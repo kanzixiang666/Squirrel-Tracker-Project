@@ -4,7 +4,7 @@
 
 ![test image size](https://images.immediate.co.uk/production/volatile/sites/23/2015/11/GettyImages-948163948-6f26c98.jpg?quality=90&crop=95px%2C231px%2C2132px%2C1420px&resize=620%2C413)
 
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7i6HzvplIc-RHTMApRKbJBTcxFmsEP3znT-AXAhn7S-he9M4nclyNr6RzNXevEEaLlB4&usqp=CAU)
+![](https://www.pestremovalguide.com/wp-content/uploads/2015/08/squirrel_garden.jpg)
 
 
 ## The project is based on Django and we implement several features:
