@@ -12,18 +12,23 @@ The file path should be specified at the command line after the name of the mana
   
 2. Views
 A map displayed the last viewed location of squirrels on an OpenStreet Map 
+    
     - located at: /sightings/maps 
     
 A view that lists all squirrel sightings with links to view each sightings 
+    
     - located at: /sightings/data
     
 A page that shows statistics about all squirrels
+    
     - located at: /sightings/stat 
     
 A page that allows users to add a new squirrel with information
+    
     - located at: /sightings/add
     
 Urls in squirrel id format that allows users to update information of a specific squirrel
+    
     - located at: /sightings/<specific squirrel id> 
     
     
