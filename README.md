@@ -1,7 +1,7 @@
 # Squirrel Tracker Project
 
 ## Introduction
-#### This is Columbia University IEOR4501 Final Project, our goal is to show the squirrels in NYC central park in map and let people to update the data.
+#### This is Columbia University IEOR4501 Final Project, our goal is to show the squirrels in NYC central park in map and let people to update the data! 
 
 ![](https://www.pestremovalguide.com/wp-content/uploads/2015/08/squirrel_garden.jpg)
 
@@ -32,17 +32,21 @@ A map displayed the last viewed location of squirrels on an OpenStreet Map
     
     - located at: /sightings/maps 
     
+    
 A view that lists all squirrel sightings with links to view each sightings 
     
     - located at: /sightings/data
+    
     
 A page that shows statistics about all squirrels
     
     - located at: /sightings/stat 
     
+    
 A page that allows users to add a new squirrel with information
     
     - located at: /sightings/add
+    
     
 Urls in squirrel id format that allows users to update information of a specific squirrel
     
