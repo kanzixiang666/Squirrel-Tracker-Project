@@ -10,10 +10,13 @@ photo reference:
 How To Protect Your Garden From Squirrels
 https://www.pestremovalguide.com/how-to-protect-your-garden-from-squirrels/ Access April 13 2021 
 
-### The project is based on Django and we implement several features:
+## Authors 
+*** Zixiang Kan(kanzixiang666) ***
+*** Xiaohan Yang(yxh0082) ***
 
+## The project is based on Django and we implement several features:
 
-#### 1.Management commands 
+### 1.Management commands 
 
 Allow users to import squirrel data from csv file and to export updated data to local path.
 
@@ -44,7 +47,5 @@ Urls in squirrel id format that allows users to update information of a specific
     
     - located at: /sightings/<specific squirrel id> 
     
-## Authors 
-** <li> Zixiang Kan(kanzixiang666) **
-** <li> Xiaohan Yang(yxh0082) **
+
 
