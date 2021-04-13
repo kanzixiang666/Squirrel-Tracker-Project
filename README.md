@@ -5,6 +5,7 @@
 ![](https://www.pestremovalguide.com/wp-content/uploads/2015/08/squirrel_garden.jpg)
 
 photo reference: 
+
 How To Protect Your Garden From Squirrels
 https://www.pestremovalguide.com/how-to-protect-your-garden-from-squirrels/ Access April 13 2021 
 
