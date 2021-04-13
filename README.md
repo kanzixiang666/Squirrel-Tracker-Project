@@ -11,9 +11,8 @@ How To Protect Your Garden From Squirrels
 https://www.pestremovalguide.com/how-to-protect-your-garden-from-squirrels/ Access April 13 2021 
 
 ## Authors 
-#### <li> Zixiang Kan(kanzixiang666)</li>
 #### <li> Xiaohan Yang(yxh0082)</li>
-
+#### <li> Zixiang Kan(kanzixiang666)</li>
 
 ## The project is based on Django and we implement several features:
 
