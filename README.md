@@ -1,4 +1,4 @@
-# Squirrel-Tracker-Project
+# Squirrel Tracker Project
 
 ## Introduction
 #### This is Columbia University IEOR4501 Final Project, our goal is to show the squirrels in NYC central park in map and let people to update the data.
@@ -14,6 +14,7 @@ https://www.pestremovalguide.com/how-to-protect-your-garden-from-squirrels/ Acce
 #### <li> Zixiang Kan(kanzixiang666)</li>
 #### <li> Xiaohan Yang(yxh0082)</li>
 
+
 ## The project is based on Django and we implement several features:
 
 ### 1.Management commands 
@@ -21,6 +22,7 @@ https://www.pestremovalguide.com/how-to-protect-your-garden-from-squirrels/ Acce
 Allow users to import squirrel data from csv file and to export updated data to local path.
 
 The file path should be specified at the command line after the name of the management command. 
+
 #### import command:
     - $ python manage.py import_squirrel_data /path/to/file.csv
 #### export command:
