@@ -2,6 +2,10 @@
 
 <img src="https://images.immediate.co.uk/production/volatile/sites/23/2015/11/GettyImages-948163948-6f26c98.jpg" width="400" height="500>
 
+![test image size](https://images.immediate.co.uk/production/volatile/sites/23/2015/11/GettyImages-948163948-6f26c98.jpg){:class="img-responsive"}
+![test image size](https://images.immediate.co.uk/production/volatile/sites/23/2015/11/GettyImages-948163948-6f26c98.jpg){:height="50%" width="50%"}
+![test image size](https://images.immediate.co.uk/production/volatile/sites/23/2015/11/GettyImages-948163948-6f26c98.jpg){:height="700px" width="400px"}
+
 ## This is IEOR4501 Final Project, our goal is to show the squirrels in NYC central park in map and let people to update the data.
 
 ## The project is based on Django and we implement several features:
