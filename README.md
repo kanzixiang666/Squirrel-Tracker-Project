@@ -12,7 +12,7 @@ The file path should be specified at the command line after the name of the mana
 #### import command:
     - $ python manage.py import_squirrel_data /path/to/file.csv
 #### export command:
-    - export commands: $ python manage.py export_squirrel_data /path/to/file.csv
+    - $ python manage.py export_squirrel_data /path/to/file.csv
   
 ### 2. Views
 A map displayed the last viewed location of squirrels on an OpenStreet Map 
