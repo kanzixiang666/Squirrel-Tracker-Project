@@ -1,0 +1,20 @@
+runtime: python37
+
+handlers:
+ - url: /static
+   static_dir: collected-static/
+
+ - url: /.*
+   script: auto
+
+resources:
+  memory_gb: 4
+
+env_variables:
+    INSTANCE_CONNECTION_NAME: 'ieor4523-data-analytics-303114:asia-east2:sightings2'  # eg. 'ieor-tools-for-analytics:asia-east1:adopt'
+    PGDATABASE: 'postgres'
+    PGUSER: 'postgres'
+    PGPASSWORD: '5smOaflKq87wu4Kj'
+    SECRET_KEY: 'mm(3xduc0w5y*(_#@!66ta=9gqzsnd$%0^+sru+$op)ni@1$n1'
+    GS_BUCKET_NAME: 'ieor4523-data-analytics-303114.df.r.appspot.com'  # eg. 'ieor-tools-for-analytics.appspot.com'
+    GOOGLE_APPLICATION_CREDENTIALS: 'service-account-key.json'  # eg. 'service-account-key.json'
