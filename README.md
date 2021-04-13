@@ -8,6 +8,7 @@ Allow users to import squirrel data from csv file and to export updated data to 
 The file path should be specified at the command line after the name of the management command. 
     
     - import commands: $ python manage.py import_squirrel_data /path/to/file.csv
+    
     - export commands: $ python manage.py export_squirrel_data /path/to/file.csv
   
 2. Views
