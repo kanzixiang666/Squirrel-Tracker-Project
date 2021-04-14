@@ -96,5 +96,5 @@ def data_show(request):
         context = {
             'squirrels': Squirrel.objects.all()
             }
-        return render(request, 'sightings/data.html', context)
+        return render(request, 'sightings/sightings.html', context)
     return HttpResponse('Method not supported.')

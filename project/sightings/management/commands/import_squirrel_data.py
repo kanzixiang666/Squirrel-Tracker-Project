@@ -50,7 +50,7 @@ class Command(BaseCommand):
                         Tail_Twitches = convert(row['Tail twitches']),
                         Approaches = convert(row['Approaches']),
                         Indifferent = convert(row['Indifferent']),
-                        Runs_From = convert(row['Runs from'])
+                        Runs_From = convert(row['Runs from']),
                         )
                 s.save()
             print('successfully saved csv')
