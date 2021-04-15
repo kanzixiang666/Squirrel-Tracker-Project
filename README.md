@@ -1,4 +1,4 @@
-# Squirrel Tracker Project
+# Squirrel Tracker
 
 ## Introduction
 #### This is Columbia University IEOR4501 Final Project, our goal is to show the squirrels in NYC central park in map and let people to update the data! 
