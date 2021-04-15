@@ -8,7 +8,7 @@
 ## Link 
 Here's our app link:
 https://ieor4523-data-analytics-303114.df.r.appspot.com/ 
-
+(Looks like Google banned our website because they think we violate some rules...)
 
 ## Authors 
 #### <li> Xiaohan Yang (yxh0082)</li>
