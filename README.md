@@ -38,7 +38,7 @@ The file path should be specified at the command line after the name of the mana
     - $ python manage.py export_squirrel_data /path/to/file.csv
   
 #### 2. Views
-A map displayed the last viewed location of squirrels on an OpenStreet Map 
+A map displayed the last viewed location of squirrels on an OpenStreet Map. Squirrels are cute!
     
     - located at: /sightings/maps 
     
@@ -58,7 +58,7 @@ A page that allows users to add a new squirrel with information
     - located at: /sightings/add
     
     
-Clicking squirrel's id allows users to update information of a specific squirrel
+Clicking squirrel's id allows users to update information of a specific squirrel!
     
     - located at: /sightings/<specific squirrel id> 
     
