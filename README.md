@@ -53,6 +53,6 @@ Urls in squirrel id format that allows users to update information of a specific
     - located at: /sightings/<specific squirrel id> 
     
 
-Photo Reference: 
+#### Photo Reference: 
 How To Protect Your Garden From Squirrels
 https://www.pestremovalguide.com/how-to-protect-your-garden-from-squirrels/ Access April 13 2021 
