@@ -14,6 +14,13 @@ https://ieor4523-data-analytics-303114.df.r.appspot.com/
 #### <li> Xiaohan Yang (yxh0082)</li>
 #### <li> Zixiang Kan (kanzixiang666)</li>
 
+## Group
+<li> Project Group 4, Section 001 </li>
+
+## UNIs 
+<li> [xy2469, zk2244] </li>
+    
+    
 ## The project is based on Django and we implement several features:
 
 ### 1.Management commands 
@@ -33,7 +40,7 @@ A map displayed the last viewed location of squirrels on an OpenStreet Map
     - located at: /sightings/maps 
     
     
-A view that lists all squirrel sightings with links to view each sightings 
+A page that lists all squirrel sightings with links to view each sightings 
     
     - located at: /sightings/data
     
@@ -48,7 +55,7 @@ A page that allows users to add a new squirrel with information
     - located at: /sightings/add
     
     
-Urls in squirrel id format that allows users to update information of a specific squirrel
+Clicking squirrel's id allows users to update information of a specific squirrel
     
     - located at: /sightings/<specific squirrel id> 
     
